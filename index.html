@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Asteroids</title>
+
+    <meta name="Author" content="Robbie Bardijn" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta
+      name="keywords"
+      content="'asteroids, rock, space, spaceship, game, canvas, javascript'"
+    />
+    <meta
+      name="description"
+      content="Check out this Asteroids game. Try to stay alive, don't let the rocks or spaceships hit you."
+    />
+
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="images/asteroids/ico.png"
+    />
+
+    <link rel="stylesheet" type="text/css" href="css/asteroidsstyle.css" />
+    <link rel="stylesheet" type="text/css" href="css/browsererror.css" />
+
+    <script type="text/javascript" src="js/modernizer/modernizr.js"></script>
+    <script type="text/javascript" src="js/util/utilFunctions.js"></script>
+
+    <script type="text/javascript" src="js/MasterAsteroids.js"></script>
+    <script type="text/javascript" src="js/asteroid/Rock.js"></script>
+    <script type="text/javascript" src="js/asteroid/Player.js"></script>
+    <script type="text/javascript" src="js/asteroid/Particle.js"></script>
+    <script type="text/javascript" src="js/asteroid/Level.js"></script>
+    <script type="text/javascript" src="js/asteroid/Saucer.js"></script>
+  </head>
+  <body>
+    <img src="images/asteroids/bg.jpg" class="bg" />
+    <?php $this->load->view("browsererror.php"); ?>
+    <canvas id="canvas" width="1024" height="600">
+      Your Browser does not support HTML5 Canvas.</canvas
+    >
+    <p id="footer">
+      <a href="http://robbiebardijn.be">Robbie Bardijn</a> &copy; 2011 | HTML5 |
+      Canvas 2D
+    </p>
+  </body>
+</html>

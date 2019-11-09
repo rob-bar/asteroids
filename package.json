@@ -1,0 +1,28 @@
+{
+  "name": "asteroids",
+  "version": "1.0.0",
+  "description": "Check out this Asteroids game. Try to stay alive, don't let the rocks or spaceships hit you.",
+  "main": "js/MasterAsteroids.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/rob-bar/asteroids.git"
+  },
+  "keywords": [
+    "asteroids",
+    "rock",
+    "space",
+    "spaceship",
+    "game",
+    "canvas",
+    "javascript"
+  ],
+  "author": "Robbie Bardijn",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/rob-bar/asteroids/issues"
+  },
+  "homepage": "https://github.com/rob-bar/asteroids#readme"
+}
