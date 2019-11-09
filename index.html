@@ -8,7 +8,7 @@
 
     <meta
       name="keywords"
-      content="'asteroids, rock, space, spaceship, game, canvas, javascript'"
+      content="asteroids, rock, space, spaceship, game, canvas, javascript"
     />
     <meta
       name="description"
@@ -24,6 +24,8 @@
     <link rel="stylesheet" type="text/css" href="css/asteroidsstyle.css" />
     <link rel="stylesheet" type="text/css" href="css/browsererror.css" />
 
+    <script type="text/javascript" src="js/jquery/jQuery_.js"></script>
+
     <script type="text/javascript" src="js/modernizer/modernizr.js"></script>
     <script type="text/javascript" src="js/util/utilFunctions.js"></script>
 
@@ -36,10 +38,35 @@
   </head>
   <body>
     <img src="images/asteroids/bg.jpg" class="bg" />
-    <?php $this->load->view("browsererror.php"); ?>
-    <canvas id="canvas" width="1024" height="600">
-      Your Browser does not support HTML5 Canvas.</canvas
-    >
+    <div id="browser-error">
+      <h2>Download a better browser</h2>
+      <h1>Browser too old or too stupid</h1>
+      <div id="browser-error-container">
+        <a
+          href="http://www.mozilla.org/en-US/firefox/new/"
+          target="_blank"
+          id="browser-l-1"
+          ><span class="hide">Firefox</span></a
+        >
+        <a href="http://www.apple.com/safari/" target="_blank" id="browser-l-2"
+          ><span class="hide">Safari</span></a
+        >
+        <a href="https://www.google.com/chrome" target="_blank" id="browser-l-3"
+          ><span class="hide">Chrome</span></a
+        >
+        <a
+          href="http://www.opera.com/download/"
+          target="_blank"
+          id="browser-l-4"
+          ><span class="hide">Opera</span></a
+        >
+      </div>
+    </div>
+    <div class="game">
+      <canvas id="canvas" width="1024" height="600">
+        Your Browser does not support HTML5 Canvas.</canvas
+      >
+    </div>
     <p id="footer">
       <a href="http://robbiebardijn.be">Robbie Bardijn</a> &copy; 2011 | HTML5 |
       Canvas 2D
