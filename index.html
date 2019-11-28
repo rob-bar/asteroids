@@ -68,8 +68,13 @@
       >
     </div>
     <p id="footer">
-      <a href="http://robbiebardijn.be">Robbie Bardijn</a> &copy; 2011 | HTML5 |
-      Canvas 2D
+      <a href="http://robbiebardijn.be">Robbie Bardijn</a> &copy; <span class="current-year"></span> | HTML5 | Canvas 2D
     </p>
+    <script>
+      var date = new Date().getFullYear();
+      var dateEl = document.querySelector(".current-year")
+      console.log(dateEl);
+      dateEl.innerText = date;
+    </script>
   </body>
 </html>

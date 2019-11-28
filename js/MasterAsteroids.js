@@ -266,7 +266,7 @@ $(document).ready(function() {
 			Debugger.log('gameStateTitle');
 			fillBackground();
 			setTextStyle();
-			context.fillText('Geo Blaster Basic', x_max * 0.5, 70);
+			context.fillText('Asteroids', x_max * 0.5, 70);
 			context.fillText('Press Spacebar To Play', x_max * 0.5, 140);
 			context.fillText('Use arrow keys to move your Ship.', x_max * 0.5, 165);
 			context.fillText('Use Spacebar to Fire.', x_max * 0.5, 185);
